@@ -1,7 +1,7 @@
 body {
   background-color: #ffffff;
   font-family: 'Lato', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
+  font-size: 18px; /* Sets the font size to 18px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #4a4a4a;
@@ -104,12 +104,20 @@ selector {
 }
 /* Layout styling */
 .container {
-  padding: 0 15px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.row {
+  .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
-#hero h1 {
+#hero span {
+  display: block;
+}
   text-align: center; /* Centers text */
 }
 .logo {
@@ -141,7 +149,36 @@ nav > ul > li > a {
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+  text-align: center;
 }
 main {
-  padding-top: 133px;
+  padding-top: 99px;
+}
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+}
+.col-md-6 {
+  width: 50%;
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
 }
