@@ -74,6 +74,32 @@ a:focus {
   background-color: #ff7f50;
   color: #ffffff;
 }
+.button {
+  display: inline-block;
+  background-color: #ff7f50;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30;
+  transition-duration: 0.2s;
+  transition-property: opacity;
+}
+.button:hover {
+  opacity: 0.8;
+}
+.button {
+  display: inline-block;
+  background-color: #ff7f50;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30;
+  transition: 0.2s opacity;
+}
 header {
   background-color: #ff44c4;
 }
@@ -88,6 +114,7 @@ header {
 }
 border-bottom: 3px solid #4a4a4a;
 selector {
+  position: bottom;
   margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
 }
 selector {
@@ -181,4 +208,14 @@ Large devices (1024px or larger)
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
+}
+width: 100%;
+max-width: 100%;
+height: auto;
+@keyframes color-change {
+  from {fill: #edc655;}
+  to {fill: #f76414;}
+}
+.sun {
+  animation: 4s color-change infinite alternate linear;
 }
