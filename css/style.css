@@ -112,28 +112,6 @@ header {
   padding: 10px;
   margin: 10px;
 }
-
-selector {
-  position: bottom;
-  margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
-}
-
-* {
-  box-sizing: border-box;
-}
-/* Layout styling */
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-  .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-
 #hero span {
   display: block;
 }
@@ -186,19 +164,25 @@ Medium devices (640px and larger)
     float: right;
     margin-top: 4px;
   }
+  }
   .col-md-6 {
     width: 50%;
 }
 [class*="col-"] {
   float: left;
 }
-
+#hero span {
+  display: block;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-}
 }
 /* Layout styling */
 .container {
@@ -218,7 +202,6 @@ X-large devices (1440px or larger)
 }
 .sun {
   animation: 4s color-change infinite alternate linear;
-}
 @keyframes cloud-move {
   from {transform: translate(0,50px);}
   to {transform: translate(200px,50px);}
