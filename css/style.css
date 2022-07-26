@@ -179,6 +179,7 @@ Medium devices (640px and larger)
   clear: both;
   display: table;
 }
+
 #about-page h3 { margin-top: 0;}
 /* ==============================
 Large devices (1024px or larger)
@@ -197,12 +198,13 @@ Large devices (1024px or larger)
 .col-lg-5 {
   width: 40%;
 }
+#about-page h3 { margin-top: 0;}
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
 }
-#about-page h3 { margin-top: 0;}
+
 @keyframes color-change {
   from {fill: #edc655;}
   to {fill: #f76414;}
