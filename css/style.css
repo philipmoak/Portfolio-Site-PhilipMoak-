@@ -119,6 +119,12 @@ header {
 .logo {
   max-width: 250px;
 }
+.profilephoto {
+  max-width: 250px;
+}
+
+
+
 header {
   background-color: #ffe4c4;
   text-align: center;
@@ -197,13 +203,13 @@ Large devices (1024px or larger)
 .col-lg-5 {
   width: 40%;
 }
+}
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
 }
 #about-page h3 { margin-top: 0;}
-}
 @keyframes color-change {
   from {fill: #edc655;}
   to {fill: #f76414;}
