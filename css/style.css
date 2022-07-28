@@ -164,7 +164,6 @@ Medium devices (640px and larger)
     float: right;
     margin-top: 4px;
   }
-  }
   .col-md-6 {
     width: 50%;
 }
@@ -181,11 +180,11 @@ Medium devices (640px and larger)
 }
 
 #about-page h3 { margin-top: 0;}
+}
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-}
 /* Layout styling */
 .container {
   max-width: 1200px;
@@ -198,13 +197,12 @@ Large devices (1024px or larger)
 .col-lg-5 {
   width: 40%;
 }
-#about-page h3 { margin-top: 0;}
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
 }
-
+#about-page h3 { margin-top: 0;}
 @keyframes color-change {
   from {fill: #edc655;}
   to {fill: #f76414;}
