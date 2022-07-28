@@ -179,7 +179,7 @@ Medium devices (640px and larger)
   display: table;
 }
 
-#about-page h3 { margin-top: 0;}
+h3 { margin-top: 0;}
 }
 /* ==============================
 Large devices (1024px or larger)
@@ -203,6 +203,7 @@ X-large devices (1440px or larger)
 @media only screen and (min-width: 1440px) {
 }
 #about-page h3 { margin-top: 0;}
+}
 @keyframes color-change {
   from {fill: #edc655;}
   to {fill: #f76414;}
