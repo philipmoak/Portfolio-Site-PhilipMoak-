@@ -232,3 +232,39 @@ X-large devices (1440px or larger)
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 #about-picture { width: 100%; }
+
+@media only screen and (max-width: 641px) {
+  nav ul {
+    display:none;
+  }
+  .navigation, .navigate::after, .navigation::before{
+    margin-top: 3px;
+    display: block;
+    background-color: #FFF;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+    }
+    .navigation::before{
+      content: '';
+      margin-top: -8px;
+
+
+    }
+
+    .navigation::after{
+      content: '';
+      margin-top: 8px;
+
+    }
+    .mobile-menu{
+      display: none;
+      border: 1px solid #dedede;
+      width: 100px;
+      background-color: #dedede;
+      padding-top: 10px;
+
+    }
+  }
