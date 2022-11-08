@@ -50,6 +50,26 @@ a:focus {
   color: #cc6540;
   text-decoration: underline;
 }
+.contact-container{
+  padding: 2px 20px 0 20px ;
+}
+.get-in-touch{
+  padding: 2px 0;
+  margin-bottom: 2px
+}
+.linkedin-contact svg{
+  fill: #ff7f50;
+  width: 20px;
+  height: 18px;
+  padding-top: 11px;
+}
+.instagram-contact svg{
+  width: 20px;
+  height: 18px;
+}
+.work-container {
+  padding: 2px 20px 0 20px ;
+}
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #ff7f50;
@@ -63,6 +83,9 @@ a:focus {
 .button:hover {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
+}
+.read-more{
+  color: #fff !important;
 }
 .button.contact {
   background-color: transparent;
@@ -187,10 +210,18 @@ Medium devices (640px and larger)
 
 h3 { margin-top: 0;}
 }
+@media only screen and (min-width: 641px) {
+  .mobile-menu{
+display: none;
+  }
+}
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  .mobile-menu{
+display: none;
+  }
 /* Layout styling */
 .container {
   max-width: 1200px;
@@ -204,10 +235,18 @@ Large devices (1024px or larger)
   width: 40%;
 }
 }
+@media only screen and (min-width: 800px) {
+  .mobile-menu{
+display: none;
+  }
+}
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
+  .mobile-menu{
+display: none;
+  }
 }
 #about-page h3 { margin-top: 0;}
 @keyframes color-change {
@@ -237,21 +276,24 @@ X-large devices (1440px or larger)
   nav ul {
     display:none;
   }
+  .navigation{
+    margin-top: 7px;
+    margin-left: 7px;
+  }
   .navigation, .navigate::after, .navigation::before{
-    margin-top: 3px;
+
     display: block;
-    background-color: #FFF;
+    background-color: #000;
     position: absolute;
     height: 4px;
     width: 30px;
     transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
     border-radius: 2px;
     }
-    .navigation::before{
+
+.navigation::before{
       content: '';
       margin-top: -8px;
-
-
     }
 
     .navigation::after{
@@ -259,12 +301,15 @@ X-large devices (1440px or larger)
       margin-top: 8px;
 
     }
+    .navigate-padding{
+      margin-top: -17px !important;
+    }
+
     .mobile-menu{
       display: none;
       border: 1px solid #dedede;
-      width: 100px;
       background-color: #dedede;
       padding-top: 10px;
-
+      margin-bottom: 17px;
+      margin-top: 27px;
     }
-  }
